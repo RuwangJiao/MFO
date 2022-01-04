@@ -4,9 +4,7 @@ classdef MFOHypE < ALGORITHM
 % nSample --- 10000 --- Number of sampled points for HV estimation
 
 %------------------------------- Reference --------------------------------
-% J. Bader and E. Zitzler, HypE: An algorithm for fast hypervolume-based
-% many-objective optimization, Evolutionary Computation, 2011, 19(1):
-% 45-76.
+% A Multiform Optimization Framework for Constrained Multi-Objective Optimization
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2021 BIMK Group. You are free to use the PlatEMO for
 % research purposes. All publications which use this platform or any code

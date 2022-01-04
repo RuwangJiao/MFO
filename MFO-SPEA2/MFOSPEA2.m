@@ -50,4 +50,4 @@ function epsn = ReduceBoundary(eF, k, MaxK)
     f(tmp)   = f(tmp).*0 + z;
     epsn     = f - z;
     epsn(epsn<=0) = 0;
-end
+end 

@@ -3,7 +3,8 @@ classdef MFOSPEA2 < ALGORITHM
 % Multiform optimization framework on strength Pareto evolutionary algorithm 2
 
 %------------------------------- Reference --------------------------------
-% A Multiform Optimization Framework for Constrained Multi-Objective Optimization
+% A Multiform Optimization Framework for Constrained Multi-Objective 
+% Optimization, IEEE Transactions on Cybernetics, 2022.
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2021 BIMK Group. You are free to use the PlatEMO for
 % research purposes. All publications which use this platform or any code

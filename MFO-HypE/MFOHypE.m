@@ -4,7 +4,8 @@ classdef MFOHypE < ALGORITHM
 % nSample --- 10000 --- Number of sampled points for HV estimation
 
 %------------------------------- Reference --------------------------------
-% A Multiform Optimization Framework for Constrained Multi-Objective Optimization
+% A Multiform Optimization Framework for Constrained Multi-Objective 
+% Optimization, IEEE Transactions on Cybernetics, 2022.
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2021 BIMK Group. You are free to use the PlatEMO for
 % research purposes. All publications which use this platform or any code
@@ -15,7 +16,7 @@ classdef MFOHypE < ALGORITHM
 %--------------------------------------------------------------------------
 
     methods
-        function main(Algorithm,Problem)
+        function main(Algorithm, Problem)
             %% Parameter setting
             nSample   = Algorithm.ParameterSet(10000);
 
@@ -25,7 +26,7 @@ classdef MFOHypE < ALGORITHM
             SourcePop = TargetPop;
             % Reference point for hypervolume calculation
             RefPoint  = zeros(1, Problem.M) + max(TargetPop.objs)*1.2;
-            initialE  = max(max(0,TargetPop.cons), [], 1);
+            initialE  = max(max(0, TargetPop.cons), [], 1);
             initialE(initialE<1) = 1;
             TargetPop = EnvironmentalSelection(TargetPop, Problem.N, RefPoint, nSample, 0);
             SourcePop = EnvironmentalSelection(SourcePop, Problem.N, RefPoint, nSample, initialE);

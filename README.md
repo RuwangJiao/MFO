@@ -5,7 +5,7 @@ Please note: MFO-SPEA2 is recommended for solving constrained optimization probl
 # Acknowledge
 Please kindly cite this paper in your publications if it helps your research:
 ```
-@article{jiao2021two,
+@article{jiao2022multiform,
   title={A Multiform Optimization Framework for Constrained Multi-Objective Optimization},
   author={Jiao, Ruwang and Xue, Bing and Zhang Mengjie},
   journal={IEEE Transactions on Cybernetics},

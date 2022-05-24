@@ -1,4 +1,4 @@
-function [Population, rankP] = EnvironmentalSelection(Population,N, PopCon)
+function [Population, rankP] = EnvironmentalSelection(Population, N, PopCon)
 % The environmental selection of MFO-SPEA2
 
 %------------------------------- Copyright --------------------------------
@@ -16,7 +16,7 @@ function [Population, rankP] = EnvironmentalSelection(Population,N, PopCon)
     %% Environmental selection
     Next = Fitness < 1;
     if sum(Next) < N
-        [~,Rank] = sort(Fitness);
+        [~, Rank] = sort(Fitness);
         Next(Rank(1:N)) = true;
     elseif sum(Next) > N
         Del  = Truncation(Population(Next).objs, sum(Next) - N);
@@ -33,7 +33,7 @@ function Del = Truncation(PopObj, K)
     %% Truncation
     Distance = pdist2(PopObj, PopObj);
     Distance(logical(eye(length(Distance)))) = inf;
-    Del = false(1,size(PopObj, 1));
+    Del = false(1, size(PopObj, 1));
     while sum(Del) < K
         Remain    = find(~Del);
         Temp      = sort(Distance(Remain, Remain), 2);

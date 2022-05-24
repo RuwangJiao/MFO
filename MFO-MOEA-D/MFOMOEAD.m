@@ -3,7 +3,8 @@ classdef MFOMOEAD < ALGORITHM
 % % Multiform optimization framework on MOEA/D
 
 %------------------------------- Reference --------------------------------
-% A Multiform Optimization Framework for Constrained Multi-Objective Optimization
+% A Multiform Optimization Framework for Constrained Multi-Objective 
+% Optimization, IEEE Transactions on Cybernetics, 2022.
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2021 BIMK Group. You are free to use the PlatEMO for
 % research purposes. All publications which use this platform or any code
@@ -17,8 +18,8 @@ classdef MFOMOEAD < ALGORITHM
         function main(Algorithm, Problem)
             %% Generate the weight vectors
             [W, Problem.N] = UniformPoint(Problem.N, Problem.M);
-            T             = 20;
-            nr            = 2;
+            T  = 20;
+            nr = 2;
             %% Detect the neighbours of each solution
             B      = pdist2(W, W);
             [~, B] = sort(B, 2);
@@ -32,7 +33,7 @@ classdef MFOMOEAD < ALGORITHM
 
             %% Optimization
             while Algorithm.NotTerminated(TargetPop)
-                epsn       = ReduceBoundary(initialE, ceil(Problem.FE/Problem.N), ceil(Problem.maxFE/Problem.N)-1);
+                epsn = ReduceBoundary(initialE, ceil(Problem.FE/Problem.N), ceil(Problem.maxFE/Problem.N)-1);
                 % For each solution
                 for i = 1 : Problem.N     
                     % Choose the parents

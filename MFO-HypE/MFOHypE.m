@@ -4,7 +4,7 @@ classdef MFOHypE < ALGORITHM
 % nSample --- 10000 --- Number of sampled points for HV estimation
 
 %------------------------------- Reference --------------------------------
-% A Multiform Optimization Framework for Constrained Multi-Objective 
+% A Multiform Optimization Framework for Constrained Multiobjective 
 % Optimization, IEEE Transactions on Cybernetics, 2022.
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2021 BIMK Group. You are free to use the PlatEMO for

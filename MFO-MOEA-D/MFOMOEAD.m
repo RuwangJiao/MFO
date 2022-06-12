@@ -3,7 +3,7 @@ classdef MFOMOEAD < ALGORITHM
 % % Multiform optimization framework on MOEA/D
 
 %------------------------------- Reference --------------------------------
-% A Multiform Optimization Framework for Constrained Multi-Objective 
+% A Multiform Optimization Framework for Constrained Multiobjective 
 % Optimization, IEEE Transactions on Cybernetics, 2022.
 %------------------------------- Copyright --------------------------------
 % Copyright (c) 2021 BIMK Group. You are free to use the PlatEMO for
